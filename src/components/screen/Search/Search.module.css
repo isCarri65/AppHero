@@ -1,0 +1,28 @@
+.containerPrincipal{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  padding-top: 50px;
+}
+
+.containerSearch{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 30vw;
+}
+.containerList {
+  display: grid;
+  margin: 2rem;
+  max-height: 80vh;
+  padding: 0.4rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2vh;
+  overflow:auto;
+}
+@media (min-width: 800px) {
+  .containerList {
+    grid-template-columns: repeat(2, 1fr); /* Máximo 2 columnas en pantallas grandes */
+  }
+}
